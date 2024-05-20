@@ -13,7 +13,7 @@ pipeline {
                 }
             }
         }
-        stage("maven"){
+        stage("maven1"){
             steps {
                 sh 'mvn clean validate compile test install test package'
             }
