@@ -1,5 +1,9 @@
 pipeline {
-    agent any 
+    agent{
+        node{
+            label 'ubuntu'
+        }
+    }
     tools{
         maven 'M2_HOME'
     }
